@@ -1,0 +1,29 @@
+﻿@model List<Masina>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Asta o sa fie pagina cu masini</h2>
+<h3>Ceaules Faragau</h3>
+
+<table style="border:1px solid black">
+    <thead>
+        <tr>
+            <th class="celulaDeTabel">Model</th>
+            <th class="celulaDeTabel">An Fabricatie</th>
+            <th class="celulaDeTabel">Culoare</th>
+            <th class="celulaDeTabel">Numar de roti</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Masina obiect in Model)
+        {
+            <tr>
+                <td class="celulaDeTabel">@obiect.Model</td>
+                <td class="celulaDeTabel">@obiect.AnFabricatie</td>
+                <td class="celulaDeTabel">@obiect.Culoare</td>
+                <td class="celulaDeTabel">@obiect.NumarDeRoti</td>
+            </tr>
+        }
+    </tbody>
+</table>
