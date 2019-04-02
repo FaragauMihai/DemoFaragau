@@ -21,9 +21,9 @@ namespace DemoPentruFaragau.Repositories
             return lista;
         }
 
-        public void Add(Masina gusti)
+        public void Add(Masina carToAdd)
         {
-            dbContext.Masinas.Add(gusti);
+            dbContext.Masinas.Add(carToAdd);
 
             dbContext.SaveChanges();
         }
